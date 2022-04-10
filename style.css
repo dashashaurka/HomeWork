@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.MainTitle {
+    text-decoration: Double underline;
+    text-align: center;
+}
+
+.Charlotte_img {
+    width: 250px;
+    border: 3px solid rgba(15, 50, 62, 0.8);
+    position: absolute;
+    right: 110px;
+    top: 70px;
+}
+
+[class$='main']{
+    margin: 100px 200px;
+    padding: 30px 30px 0px 30px;
+}
+
+.Charlotte_main {
+    border-top: 3px solid rgba(15, 50, 62, 0.406);
+    border-right: 3px solid rgba(15, 50, 62, 0.406);
+    border-left: 3px dashed rgba(15, 50, 62, 0.406);
+    border-bottom: 3px dashed rgba(15, 50, 62, 0.406);
+    background-color: rgba(45, 174, 216, 0.235);
+}
+
+.Charlotte_subtitle {
+    color: rgba(3, 41, 53, 0.755);
+    text-decoration: underline;
+}
+
+.Charlotte_Description:first-letter {
+    color: rgba(3, 41, 53, 0.755);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.Parts_Charlotte {
+    color: rgba(3, 41, 53, 0.755);
+}
+
+.Charlotte_main li:nth-child(even) {
+    color: rgba(3, 41, 53, 0.755);
+    text-decoration: underline dotted;
+
+}
+[class$='Advice']{
+    text-decoration: overline;
+    font-style: italic;
+    text-align: center;
+}
+
+.Tiramisu_main {
+    border-top: 3px solid rgba(58, 58, 58, 0.762);
+    border-right: 3px solid rgba(58, 58, 58, 0.762);
+    border-left: 3px dashed rgba(58, 58, 58, 0.762);
+    border-bottom: 3px dashed rgba(58, 58, 58, 0.762);
+    background-color: rgba(169, 169, 169, 0.18);
+    position: relative;
+
+}
+
+.Tiramisu_img {
+    width: 250px;
+    border: 3px solid rgba(15, 50, 62, 0.8);
+    position: absolute;
+    right: -100px;
+    top: -60px;
+}
+
+.Tiramisu_subtitle {
+    color: rgba(58, 58, 58, 0.762);
+    text-decoration: underline;
+}
+
+.Tiramisu_Description:first-letter {
+    color: rgba(58, 58, 58, 0.762);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+.Parts_Tiramisu {
+    color: rgba(58, 58, 58, 0.762);
+}
+
+.Tiramisu_main li:nth-child(2n+1) {
+    color: rgba(58, 58, 58, 0.762);
+    text-decoration: underline dashed;
+
+}
+
+.Cookies_main {
+    border-top: 3px solid rgba(34, 74, 34, 0.831);
+    border-right: 3px solid rgba(34, 74, 34, 0.831);
+    border-left: 3px dashed rgba(34, 74, 34, 0.831);
+    border-bottom: 3px dashed rgba(34, 74, 34, 0.831);
+    background-color: rgba(143, 188, 143, 0.618);
+    position: relative;
+}
+
+.Cookies_img {
+    width: 250px;
+    border: 3px solid rgba(15, 50, 62, 0.8);
+    position: absolute;
+    right: -100px;
+    top: -60px;
+}
+
+
+.Cookies_subtitle {
+    color: rgba(34, 74, 34, 0.831);
+    text-decoration: underline;
+}
+
+.Cookies_Description:first-letter {
+    color: rgba(34, 74, 34, 0.831);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.Parts_Cookies {
+    color: rgba(34, 74, 34, 0.831);
+}
+
+.Cookies_main li:nth-child(3n+3) {
+    color: rgba(34, 74, 34, 0.831);
+    text-decoration: underline wavy;
+}
