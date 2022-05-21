@@ -7,6 +7,7 @@
 
 /*header styles start*/
 
+
 header {
   max-width: 1920px;
   margin: 0 auto;
@@ -2105,6 +2106,11 @@ footer {
 
 
 @media (max-width: 1400px) {
+
+
+  body {
+    overflow-x: hidden;
+  }
 
   .header_nav {
 flex-wrap: wrap;
