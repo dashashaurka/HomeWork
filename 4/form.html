@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Забронировать столик</title>
+</head>
+
+<body>
+    <form onsubmit="submitForm(event)">
+        <fieldset>
+
+            <legend>Бронирование столика в ресторанном комплексе «Прованс»</legend>
+
+            <label for="name">Ваше имя</label>
+
+            <input type="text" id="name" name="name" pattern="[A-Za-zА-Яа-яЁё]{2,}" />
+
+            <br>
+            <br>
+
+            <label for="phone">Мобильный телефон</label>
+
+            <input type="tel" id="phone" name="phone" placeholder="+375(_ _) _ _ _ _ _ _ _" minlength="13"
+                maxlength="17" />
+
+            <br>
+            <br>
+
+            <label for="mail">E-mail</label>
+
+            <input type="email" id="mail" name="mail" />
+
+            <br>
+            <br>
+
+            <label for="persons">Количество персон</label>
+
+            <input type="number" min="1" id="persons" name="persons" />
+
+            <br>
+            <br>
+
+            <label for="date">Дата посещения</label>
+
+            <input type="date" min="2022-03-20" id="date" name="date" />
+
+            <br>
+            <br>
+
+            <label for="time">Время посещения</label>
+
+            <input type="time" id="time" name="time" min="12:00" max="23:00" />
+
+            <br>
+            <br>
+
+            <label for="comment">Комментарий</label>
+
+            <br>
+            <br>
+
+            <textarea rows="10" cols="80" id="comment" name="comment" placeholder="Пожелание к брони"></textarea>
+
+            <br>
+            <br>
+
+            <button type="submit">Забронировать</button>
+
+        </fieldset>
+
+    </form>
+
+   
+    <!-- <div id="current_date_block"></div> -->
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+
+            const result = Object.fromEntries(formData);
+
+            console.log('RES', result);
+
+        }
+
+       /* Это я пыталась сделать, чтобы в выборе даты можно было указать сегодня и дальше
+       Дату я нашла как вывести, но как задать ее инпуту не смогла
+       не руками же каждый день меняют мин значение для даты */
+
+    /* (если число меньше десяти, перед числом добавляем ноль) */
+    function zero_first_format(value)
+    {
+        if (value < 10)
+        {
+            value='0'+value;
+        }
+        return value;
+    }
+
+    /* функция получения текущей даты */
+
+    function date()
+    {
+        var current_datetime = new Date();
+        var day = zero_first_format(current_datetime.getDate());
+        var month = zero_first_format(current_datetime.getMonth()+1);
+        var year = current_datetime.getFullYear();
+
+        return year+"-"+month+"-"+day;
+    }
+
+
+    /* выводим текущую дату и время на сайт в блок с id "current_date_block" */
+    document.getElementById('current_date_block').innerHTML = date();
+
+    </script>
+</body>
+
+</html>

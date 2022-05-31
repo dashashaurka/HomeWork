@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures</title>
+</head>
+
+<body>
+
+    <h1>Вставка изображений в HTML-документ</h1>
+
+    <hr>
+
+    <h2>Греция</h2>
+
+    <p>
+        Греция находится в Южной Европе и занимает южную часть Балканского полуострова.
+    </p>
+
+    <p>
+        Территория страны делится на материковую часть, полуостров Пелопоннес и острова в Эгейском море (крупнейшие —
+        Крит, Лесбос, Эвбея).
+    </p>
+
+    <figure>
+            <img src="img/img_peloponnese.png" alt="peloponnese1">
+            <img src="img/img_peloponnese2.png" alt="peloponnese2">
+        <figcaption>Рельеф страны представляет собой чередование гористой местности и безлесых выровненных участков, живописных
+            плодородных долин, мелких бухт, заливов, островных территорий, карстовых воронок и пещер в западной части
+            Греции.
+        </figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>Создание изображения в качестве карты</h2>
+
+    <img src="img/map_peloponnese.jpeg" alt="map_peloponnese" usemap="#pelop" />
+
+    <map name="pelop">
+
+        <area shape="rect" coords="332,127,353,146" href="https://www.skg-airport.gr/en" alt="peloponnese" target="_blank" />
+
+        <area shape="rect" coords="131,442,153,463" href="https://www.zth-airport.gr/en" target="_blank" />
+
+        <area shape="rect" coords="400,389,420,408" href="https://www.aia.gr/traveler/" target="_blank" />
+
+        <area shape="rect" coords="726,513,750,538" href="https://www.kgs-airport.gr/en" target="_blank" />
+
+        <area shape="rect" coords="823,584,848,605" href="https://www.rho-airport.gr/el" target="_blank" />
+
+        <area shape="rect" coords="523,686,548,706" href="https://www.chq-airport.gr/el" target="_blank" />
+  
+    </map>
+
+</body>
+
+</html>

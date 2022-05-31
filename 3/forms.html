@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form onsubmit="submitForm(event)">
+        <fieldset>
+
+            <legend>Форма обратной связи</legend>
+
+            <label for="surname">Ваша фамилия</label>
+            <input type="text" id="surname" name="surname" />
+
+            <br>
+            <br>
+
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" />
+
+            <br>
+            <br>
+
+            <label for="phone">Мобильный телефон</label>
+            <input type="tel" id="phone" name="phone" value="+375" minlength="13" maxlength="17" />
+
+            <br>
+            <br>
+
+            <label for="mail">E-mail</label>
+            <input type="email" id="mail" name="mail" />
+
+            <br>
+            <br>
+
+            <label for="theme">Тема обращения</label>
+            <select id="theme" name="theme">
+                <option selected disabled>Выберите тему обращения</option>
+                <option>Все не работает</option>
+                <option>Все работает ужасно</option>
+                <option>Ничего не работает</option>
+                <option>Работает ужасно</option>
+                <option>Не работает ничего</option>
+                <option>Ничто не работает</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="messenge">Сообщение:</label>
+            <br>
+            <br>
+            <textarea rows="10" cols="45" id="messenge" name="messenge" placeholder="Введите текст вашего сообщения..."></textarea>
+
+            <br>
+            <br>
+
+            <label for="file"></label>
+            <input type="file" id="file" name="file">
+
+            <br>
+            <br>
+
+            <input type="checkbox" id="agree" name="agree" checked value="personagree" />
+            <label for="agree">Вы соглашаетесь с тем, чтобы мы обрабатывали Ваши данные для предоставления Вам обратной
+                связи.
+            </label>
+
+            <br>
+            <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+
+    </form>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+            const result = Object.fromEntries(formData);
+
+            console.log('RES', result);
+
+        }
+
+    </script>
+</body>
+
+</html>

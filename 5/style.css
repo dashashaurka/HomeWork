@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(165, 224, 185);
+    padding: 10px;
+    margin: 10px;
+}
+
+h1{
+    text-align: center;
+    text-decoration: overline;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+}
+h2{
+    text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 20px;
+
+}
+
+li:nth-of-type(2), 
+li:nth-of-type(5){
+    color:green;
+    text-decoration-line:underline;
+    text-decoration-style: dashed;
+}
+
+li:nth-of-type(3){
+    text-decoration-line:line-through;
+    text-decoration-color: red;
+}
+
+[class^='visit']{
+    width: 450px;
+    height: 210px;
+    line-height: 35px;
+    padding: 10px; 
+}
+
+p{
+    text-indent: 30px;   
+}
+
+.visitPraga,
+.visitAustria{
+    border: 5px dotted;
+}
+
+.visitParis,
+.visitGermany{
+    border: 5px dashed;
+}
+
+.visitPraga{
+    background-color: yellow;
+    margin: 2% 5% 0;
+}
+
+.visitParis{
+    background-color: rgba(73, 209, 61, 0.945);
+    margin: 0 0 0 65%;
+}
+
+.visitGermany{
+    background-color:blueviolet;
+    margin: 0% 15% 0;
+}
+
+.visitAustria{
+    background-color:rgb(241, 128, 100);
+    margin: 0% 55% 0;
+}
